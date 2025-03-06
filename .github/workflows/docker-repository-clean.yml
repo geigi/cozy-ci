@@ -1,3 +1,5 @@
+name: Registry prune
+
 on:
   workflow_dispatch:
   schedule:
@@ -16,4 +18,3 @@ jobs:
           image-tags: "!main"
           cut-off: 1w
           keep-n-most-recent: 3
-          dry-run: true
