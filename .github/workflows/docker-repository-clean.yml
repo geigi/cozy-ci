@@ -3,7 +3,7 @@ name: Registry prune
 on:
   workflow_dispatch:
   schedule:
-    - cron: "5 * * * *" # every hour
+    - cron: "5 3 * * *" # once per day
 
 jobs:
   clean:
