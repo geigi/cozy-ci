@@ -12,6 +12,7 @@ jobs:
         with:
           account: user
           token: ${{ secrets.GITHUB_TOKEN }}
+          image-names: "cozy-ci"
           image-tags: "!main"
           cut-off: 1w
           keep-n-most-recent: 3
